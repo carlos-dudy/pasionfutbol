@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria - Pasión Futbol</title>
+    <link rel="stylesheet" href="/stylos/stylos.css" />
+    <link rel="stylesheet" href="/stylos/formulario.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo"> <img src="/img/logo.png" alt="logo" /></a>
+        <label class="labelHamburger" for="menuHamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="List_icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </label>
+        <input
+          type="checkbox"
+          class="menuHamburger"
+          name=""
+          id="menuHamburger"
+        />
+        <ul class="ulLinks">
+          <li class="liLinks">
+            <a href="/html/nosotros.html" class="links">Nosotros</a>
+          </li>
+
+          <li class="liLinks">
+            <a href="/html/galeria.html" class="links">Galeria</a>
+          </li>
+          <li class="liLinks">
+            <a href="/html/contacto.html" class="links"> Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="body">
+        <div class="dere">
+            <form class="formu" action="https://formspree.io/f/xqazrglw"
+            method="POST">
+                <label>Nombre y apellido</label>
+                <input type="text" size="35" id="nombre" name="nombre"/> <br/><br/>
+
+                <labe>Dirección de envio</labe>
+                <input type="text" size="35" id="direccion" name="direccion"/><br/><br/>
+
+                <labe>Correo</labe>
+                <input type="text" size="35" id="correo" name="correo"/><br/><br/>
+                
+                <labe>Numero telefonico</labe>
+                <input type="number" size="15" id="telefono" name="telefono"/><br/><br/>
+
+
+                <label>Selecciona tu camiseta</label>
+                <select id="Producto">
+                    <option value="Argentina 2024 1era equipacion"> Argentina 2024 1era equipacion</option>
+                    <option value="Brasil 2024 1era equipacion"> Brasil 2024 1era equipacion</option>
+                    <option value="Real Madrid 2024 1era Equipacion"> Real Madrid 2024 1era Equipacion</option>
+                    <option value="Real Madrid 2024 2da Equipacion"> Real Madrid 2024 2da Equipacion</option>
+                    <option value="Real Madrid 2024 3era Equipacion"> Real Madrid 2024 3era Equipacion</option>
+                    <option value="Barcelona FC 2024 1era Equipacion"> Barcelona FC 2024 1era Equipacion</option>
+                    <option value="Barcelona 2024 2da Equipacion"> Barcelona 2024 2da Equipacion</option>
+                    <option value="Arsenal 2024 1era Equipacion"> Arsenal 2024 1era Equipacion</option>
+                    <option value="Atl Madrid 2024 1era Equipacion"> Atl Madrid 2024 1era Equipacion</option>
+                    <option value="Boca Jr 2024 1era Equipacion"> Boca Jr 2024 1era Equipacion</option>
+                    <option value="River Plate 2024 1era Equipacion"> River Plate 2024 1era Equipacion</option>
+                    <option value="Manchester United 2024 1era Equipacion"> Manchester United 2024 1era Equipacion</option>
+                </select><br/><br/>
+
+                <label>Talla</label>
+                <select id="Talla">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select> <br/><br/>
+
+                <label>
+                    Indicacion adicional
+                    <textarea name="indicaciones"></textarea>
+                  </label><br/><br/>
+                  <div class="buttonComprar">
+                      <button class="button" type="submit">Comprar</button>
+                  </div>
+                  
+                </form>
+            </div>
+            <div class="camisetas">
+             <div class="div1">
+                    <img src="/img/Argentina local.jpeg" alt="Argentina"/><br/>
+                    <label>Argentina 1era equipación</label>
+                </div>
+                <div class="div2">
+                    <img src="/img/Brasil.jpeg" alt="Brasil"/>
+                    <label>Brasil 1era equipación</label>
+                </div>
+                <div class="div3">
+                    <img src="/img/RMadrid.jpeg" alt="Real Madrid Fc"/><br/>
+                    <label>Real Madrid 1era equipación</label>
+                </div>
+                <div class="div5">
+                    <img src="/img/RMadrid(3).jpeg" alt="Real Madrid Fc"/>
+                    <label>Real Madrid 2da equipación</label>
+                </div>
+                <div class="div4">
+                    <img src="/img/RMadrid(1).jpeg" alt="Real Madrid FC"/>
+                    <label>Real Madrid 3era equipación 2024</label>
+                </div>
+                <div class="div6">
+                    <img src="/img/Barcelona.jpeg" alt="Barcelona Fc"/> 
+                    <label>Barcelona Fc 1era equipación 2024</label>
+                </div>
+                <div class="div9">
+                    <img src="/img/Barca(1).jpeg" alt="Barcelona Fc"/>
+                    <label>Barcelona FC 2da equipación 2024</label>
+                </div>
+                <div class="div8">
+                    <img src="/img/Arsenal.jpeg" alt="Arsenal Fc"/>  
+                    <label>Arsenal 1era Equipacion 2024</label>
+                </div>
+                <div class="div7">
+                    <img src="/img/AtlMadrid.jpeg" alt="Atle Madrid"/>
+                    <label>Atl Madrid 1era Equipacion 2024</label>
+                </div>
+                <div class="div10">
+                    <img src="/img/BocaJ (2).jpeg" alt="Boca Jr"/>
+                    <label> Boca Jr 1era equipacion 2024</label>
+                </div>
+                <div class="div11">
+                    <img src="/img/River 1era.jpeg" alt="River Plate"/>
+                    <label>River Plate 1era equipacion 2024</label>
+                </div>
+                <div class="div12">
+                    <img src="/img/ManUtd 1era.jpeg" alt="Manchester United"/>
+                    <label>Machester United 1era equipacion 2024</label>
+                </div>
+               
+                </div>
+            </div>
+
+
+            
+            
+            
+            <a href="index.html"><button class="buttonAtras">Atras</button></a>
+        </div>
+    </main>
+   
+
+           
+           
+    </header>
+</body>
+</html>

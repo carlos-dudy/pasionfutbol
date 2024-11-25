@@ -1,0 +1,230 @@
+:root {
+  --color_primario: #4d0b79a8;
+  --color_primario_suave: #8527c3fd;
+  --altura_header: 80px;
+  --padding_left_right: 2rem;
+  --ancho_maximo: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color_primario);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+.header {
+  height: var(--altura_header);
+  background-color: var(--color_primario);
+}
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 var(--padding_left_right);
+}
+.menuHamburger {
+  display: none;
+}
+.menuHamburger:checked + .ulLinks {
+  height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+  height: 100%;
+}
+.logo img {
+  height: 100%;
+}
+
+
+.List_icon {
+  color: white;
+  cursor: pointer;
+}
+.ulLinks {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #8527c3fd;
+  top: var(--altura_header);
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  transition: all 0.3s;
+}
+
+.links {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+.containerCard {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+}
+.containerCard .card {
+  width: 80%;
+  height: 80%;
+  margin-left: 10px;
+}
+
+.card {
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+  margin: 5px 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 2px;
+}
+.card .content {
+  padding: 2px;
+  display: flex;
+  text-align: center;
+  justify-self: center;
+}
+
+.card .content p {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+.containerNosotros {
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  flex-direction: column;
+  background-color: #b169e06e;
+  padding: 2rem 2rem;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .labelHamburger {
+    display: none;
+  }
+  .ulLinks {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .links {
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+  .links:hover {
+    padding: 2rem 0.7rem;
+  }
+  section {
+    display: flex;
+    width: 100%;
+    height: 430px;
+  }
+
+  section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+  .containerCard {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+
+@media (min-width: 980px){
+  .labelHamburger {
+    display: none;
+  }
+  .ulLinks {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .links {
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+  .links:hover {
+    padding: 2rem 0.7rem;
+  }
+  section {
+    display: flex;
+    width: 100%;
+    height: 430px;
+  }
+
+  section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  .containerCard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+}

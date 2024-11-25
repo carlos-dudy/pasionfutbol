@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria - Pasión Futbol</title>
+    <link rel="stylesheet" href="/stylos/stylos.css" />
+    <link rel="stylesheet" href="/stylos/contacto.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <img src="/img/logo.png" alt="logo"
+        /></a>
+        <label class="labelHamburger" for="menuHamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="List_icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </label>
+        <input
+          type="checkbox"
+          class="menuHamburger"
+          name=""
+          id="menuHamburger"
+        />
+        <ul class="ulLinks">
+          <li class="liLinks">
+            <a href="/html/nosotros.html" class="links">Nosotros</a>
+          </li>
+
+          <li class="liLinks">
+            <a href="/html/galeria.html" class="links">Galeria</a>
+          </li>
+          <li class="liLinks">
+            <a href="/html/contacto.html" class="links"> Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="container">
+          <div class="div1">
+            <form
+            action="https://formspree.io/f/xzzbplzv"
+            method="POST"
+          >
+              <h3>Quieres comprar por mayor</h3>
+              <label>Nombre y apellido</label>
+              <input type="text" size="35" id="nombre" name="nombre" />
+              <br /><br />
+
+              <labe>Correo</labe>
+              <input
+                type="text"
+                size="35"
+                id="correo"
+                name="correo"
+              /><br /><br />
+
+              <labe>Numero telefonico</labe>
+              <input
+                type="number"
+                size="15"
+                id="telefono"
+                name="telefono"
+              /><br /><br />
+
+              <label>
+                Escribe tus dudas...
+                <textarea name="indicaciones"></textarea></label
+              ><br /><br />
+              <h2>Nos pondremos en contacto contigo!</h2>
+              <div class="buttonComprar">
+                <button class="button" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="div2">
+            <h3>Donde estamos ubicados?</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26264.518262080226!2d-58.6551623!3d-34.62780315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8bc768e1ea5%3A0x292c54382e196f96!2sPlaza%20Oeste!5e0!3m2!1ses-419!2sar!4v1728554126411!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>

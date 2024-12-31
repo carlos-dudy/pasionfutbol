@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeria - Pasión Futbol</title>
+    <title>Tienda - Pasión Futbol</title>
     <link rel="stylesheet" href="/stylos/compras.css" />
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <a href="index.html" class="logo"> <img src="/img/logo.png" alt="logo" /></a>
+        <a href="index.html" class="logo">
+          <img src="/img/logo.png" alt="logo"
+        /></a>
         <label class="labelHamburger" for="menuHamburger">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,366 +46,199 @@
           </li>
         </ul>
       </nav>
+      <div class="tituloContainer">
+        <h3>Selecciona tu producto</h3>
+      </div>
+      <div class="containerCarrito">
+        <div class="carrito"> 
+          <div class="info" id="carrito"></div>
+          <br />
+          <div class="buttonsCar">
+
+
+            <button id="btnPagar" onclick="pagar()">Pagar</button>
+            <button id="btnLimpiar" onclick="limpiarCarrito()">
+              Vaciar Carrito
+            </button>
+          </div>
+        </div>
+
+
+
+          </div>
       <main>
-        <div class="tituloContainer">
-          <h3>Selecciona tu producto</h3>
-        </div>
-        <div class="containerCards">
-<div class="Card">
-  <div class="container page-wrapper">
-    <div class="page-inner">
-      <div class="row">
-        <div class="el-wrapper">
-          <div class="box-up">
-            <img class="img" src="/img/Alemania 1era.jpeg" alt="Alemania" width="100%">
-            <div class="img-info">
-              <div class="info-inner">
-                <span class="p-name">Alemania</span>
-                <span class="p-company">Adidas</span>
-              </div>
-              <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-            </div>
+        <section class="cards">
+          <div class="card">
+            <img src="/img/RMadrid(1).jpeg" alt="Real Madrid gris" />
+            <h3>Real Madrid</h3>
+            <h4>Adidas</h4>
+            <h5>35.000$</h5>
+            <span>Talla:</span>
+            <select id="talla" name="talla">
+              <option value="Talla S">S</option>
+              <option value="Talla M">M</option>
+              <option value="Talla L">L</option>
+              <option value="Talla XL">XL</option>
+              <option value="Talla XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('Real Madrid gris', 35000 , )"
+            >
+              Comprar
+            </button>
           </div>
-  
-          <div class="box-down">
-            <div class="h-bg">
-              <div class="h-bg-inner"></div>
-            </div>
-  
-            <a class="cart" href="#">
-              <span class="price">$20</span>
-              <span class="add-to-cart">
-                <span class="txt">Add in cart</span>
-              </span>
-            </a>
+          <div class="card">
+            <img src="/img/RMadrid.jpeg" alt="Real Madrid blanca" />
+            <h3>Real Madrid</h3>
+            <h4>Adidas</h4>
+            <h5>36.000$</h5>
+            <span>Talla:</span>
+            <select id="talla" name="talla">
+              <option value="Talla S">S</option>
+              <option value="Talla M">M</option>
+              <option value="Talla L">L</option>
+              <option value="Talla XL">XL</option>
+              <option value="Talla XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('Real Madrid gris', 36000 , )"
+            >
+              Comprar
+            </button>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="Card">
-  <div class="Card">
-    <div class="container page-wrapper">
-      <div class="page-inner">
-        <div class="row">
-          <div class="el-wrapper">
-            <div class="box-up">
-              <img class="img" src="/img/BocaJ.jpeg" alt="Boca jr" width="100%">
-              <div class="img-info">
-                <div class="info-inner">
-                  <span class="p-name">Boca Jr.</span>
-                  <span class="p-company">Adidas</span>
-                </div>
-                <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-              </div>
-            </div>
-    
-            <div class="box-down">
-              <div class="h-bg">
-                <div class="h-bg-inner"></div>
-              </div>
-    
-              <a class="cart" href="#">
-                <span class="price">$22</span>
-                <span class="add-to-cart">
-                  <span class="txt">Add in cart</span>
-                </span>
-              </a>
-            </div>
+          <div class="card">
+            <img src="/img/Barca.jpeg" alt="Barcelona Local" />
+            <h3>Barcelona FC</h3>
+            <h4>Nike</h4>
+            <h5>25.000$</h5>
+            <span>Talla:</span>
+            <select id="talla" name="talla">
+              <option value="Talla S">S</option>
+              <option value="Talla M">M</option>
+              <option value="Talla L">L</option>
+              <option value="Talla XL">XL</option>
+              <option value="Talla XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('Barcelona Local', 25000 , )"
+            >
+              Comprar
+            </button>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Card">
-  <div class="container page-wrapper">
-    <div class="page-inner">
-      <div class="row">
-        <div class="el-wrapper">
-          <div class="box-up">
-            <img class="img" src="/img/Alemania 1era.jpeg" alt="Alemania" width="100%">
-            <div class="img-info">
-              <div class="info-inner">
-                <span class="p-name">Alemania</span>
-                <span class="p-company">Adidas</span>
-              </div>
-              <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-            </div>
+          <div class="card">
+            <img src="/img/Barca(1).jpeg" alt="Barcelona Negra" />
+            <h3>Barcelona FC</h3>
+            <h4>Nike</h4>
+            <h5>28.000$</h5>
+            <label>Talla:</label>
+            <select id="talla" name="talla">
+              <option value=" S">S</option>
+              <option value=" M">M</option>
+              <option value=" L">L</option>
+              <option value="XL">XL</option>
+              <option value=" XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('Barcelona Local', 28000 , value )"
+            >
+              Comprar
+            </button>
           </div>
-  
-          <div class="box-down">
-            <div class="h-bg">
-              <div class="h-bg-inner"></div>
-            </div>
-  
-            <a class="cart" href="#">
-              <span class="price">$20</span>
-              <span class="add-to-cart">
-                <span class="txt">Add in cart</span>
-              </span>
-            </a>
+          <div class="card">
+            <img src="/img/River 1era.jpeg" alt="River Plate local" />
+            <h3>River Plate</h3>
+            <h4>Adidas</h4>
+            <h5>30.000$</h5>
+            <span>Talla:</span>
+            <select id="talla" name="talla">
+              <option value="Talla S">S</option>
+              <option value="Talla M">M</option>
+              <option value="Talla L">L</option>
+              <option value="Talla XL">XL</option>
+              <option value="Talla XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('River Plate local', 30000 , )"
+            >
+              Comprar
+            </button>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="Card">
-  <div class="Card">
-    <div class="container page-wrapper">
-      <div class="page-inner">
-        <div class="row">
-          <div class="el-wrapper">
-            <div class="box-up">
-              <img class="img" src="/img/BocaJ.jpeg" alt="Boca jr" width="100%">
-              <div class="img-info">
-                <div class="info-inner">
-                  <span class="p-name">Boca Jr.</span>
-                  <span class="p-company">Adidas</span>
-                </div>
-                <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-              </div>
-            </div>
-    
-            <div class="box-down">
-              <div class="h-bg">
-                <div class="h-bg-inner"></div>
-              </div>
-    
-              <a class="cart" href="#">
-                <span class="price">$22</span>
-                <span class="add-to-cart">
-                  <span class="txt">Add in cart</span>
-                </span>
-              </a>
-            </div>
+          <div class="card">
+            <img src="/img/BocaJ (2).jpeg" alt="Boca jr local" />
+            <h3>Boca Jr</h3>
+            <h4>Adidas</h4>
+            <h5>30.000$</h5>
+            <span>Talla:</span>
+            <select id="talla" name="talla">
+              <option value="Talla S">S</option>
+              <option value="Talla M">M</option>
+              <option value="Talla L">L</option>
+              <option value="Talla XL">XL</option>
+              <option value="Talla XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('Boca Jr local', 30000 , )"
+            >
+              Comprar
+            </button>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Card">
-  <div class="container page-wrapper">
-    <div class="page-inner">
-      <div class="row">
-        <div class="el-wrapper">
-          <div class="box-up">
-            <img class="img" src="/img/Alemania 1era.jpeg" alt="Alemania" width="100%">
-            <div class="img-info">
-              <div class="info-inner">
-                <span class="p-name">Alemania</span>
-                <span class="p-company">Adidas</span>
-              </div>
-              <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-            </div>
+          <div class="card">
+            <img src="/img/Arsenal.jpeg" alt="Arsenal local" />
+            <h3>Arsenal</h3>
+            <h4>Adidas</h4>
+            <h5>30.000$</h5>
+            <span>Talla:</span>
+            <select id="talla" name="talla">
+              <option value="Talla S">S</option>
+              <option value="Talla M">M</option>
+              <option value="Talla L">L</option>
+              <option value="Talla XL">XL</option>
+              <option value="Talla XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('Arsenal local', 30000 , )"
+            >
+              Comprar
+            </button>
           </div>
-  
-          <div class="box-down">
-            <div class="h-bg">
-              <div class="h-bg-inner"></div>
-            </div>
-  
-            <a class="cart" href="#">
-              <span class="price">$20</span>
-              <span class="add-to-cart">
-                <span class="txt">Add in cart</span>
-              </span>
-            </a>
+          <div class="card">
+            <img src="/img/MUnited.jpeg" alt="Man udt local" />
+            <h3>Manchester U</h3>
+            <h4>Adidas</h4>
+            <h5>30.000$</h5>
+            <span>Talla:</span>
+            <select id="talla" name="talla">
+              <option value="Talla S">S</option>
+              <option value="Talla M">M</option>
+              <option value="Talla L">L</option>
+              <option value="Talla XL">XL</option>
+              <option value="Talla XXL">XXL</option>
+            </select>
+            <br />
+            <button
+              id="btnComprar"
+              onclick="agregarProducto('Man udt local', 30000 , )"
+            >
+              Comprar
+            </button>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="Card">
-  <div class="Card">
-    <div class="container page-wrapper">
-      <div class="page-inner">
-        <div class="row">
-          <div class="el-wrapper">
-            <div class="box-up">
-              <img class="img" src="/img/BocaJ.jpeg" alt="Boca jr" width="100%">
-              <div class="img-info">
-                <div class="info-inner">
-                  <span class="p-name">Boca Jr.</span>
-                  <span class="p-company">Adidas</span>
-                </div>
-                <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-              </div>
-            </div>
-    
-            <div class="box-down">
-              <div class="h-bg">
-                <div class="h-bg-inner"></div>
-              </div>
-    
-              <a class="cart" href="#">
-                <span class="price">$22</span>
-                <span class="add-to-cart">
-                  <span class="txt">Add in cart</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Card">
-  <div class="container page-wrapper">
-    <div class="page-inner">
-      <div class="row">
-        <div class="el-wrapper">
-          <div class="box-up">
-            <img class="img" src="/img/Alemania 1era.jpeg" alt="Alemania" width="100%">
-            <div class="img-info">
-              <div class="info-inner">
-                <span class="p-name">Alemania</span>
-                <span class="p-company">Adidas</span>
-              </div>
-              <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-            </div>
-          </div>
-  
-          <div class="box-down">
-            <div class="h-bg">
-              <div class="h-bg-inner"></div>
-            </div>
-  
-            <a class="cart" href="#">
-              <span class="price">$20</span>
-              <span class="add-to-cart">
-                <span class="txt">Add in cart</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="Card">
-  <div class="Card">
-    <div class="container page-wrapper">
-      <div class="page-inner">
-        <div class="row">
-          <div class="el-wrapper">
-            <div class="box-up">
-              <img class="img" src="/img/BocaJ.jpeg" alt="Boca jr" width="100%">
-              <div class="img-info">
-                <div class="info-inner">
-                  <span class="p-name">Boca Jr.</span>
-                  <span class="p-company">Adidas</span>
-                </div>
-                <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-              </div>
-            </div>
-    
-            <div class="box-down">
-              <div class="h-bg">
-                <div class="h-bg-inner"></div>
-              </div>
-    
-              <a class="cart" href="#">
-                <span class="price">$22</span>
-                <span class="add-to-cart">
-                  <span class="txt">Add in cart</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Card">
-  <div class="container page-wrapper">
-    <div class="page-inner">
-      <div class="row">
-        <div class="el-wrapper">
-          <div class="box-up">
-            <img class="img" src="/img/Alemania 1era.jpeg" alt="Alemania" width="100%">
-            <div class="img-info">
-              <div class="info-inner">
-                <span class="p-name">Alemania</span>
-                <span class="p-company">Adidas</span>
-              </div>
-              <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-            </div>
-          </div>
-  
-          <div class="box-down">
-            <div class="h-bg">
-              <div class="h-bg-inner"></div>
-            </div>
-  
-            <a class="cart" href="#">
-              <span class="price">$20</span>
-              <span class="add-to-cart">
-                <span class="txt">Add in cart</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="Card">
-  <div class="Card">
-    <div class="container page-wrapper">
-      <div class="page-inner">
-        <div class="row">
-          <div class="el-wrapper">
-            <div class="box-up">
-              <img class="img" src="/img/BocaJ.jpeg" alt="Boca jr" width="100%">
-              <div class="img-info">
-                <div class="info-inner">
-                  <span class="p-name">Boca Jr.</span>
-                  <span class="p-company">Adidas</span>
-                </div>
-                <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-              </div>
-            </div>
-    
-            <div class="box-down">
-              <div class="h-bg">
-                <div class="h-bg-inner"></div>
-              </div>
-    
-              <a class="cart" href="#">
-                <span class="price">$22</span>
-                <span class="add-to-cart">
-                  <span class="txt">Add in cart</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Card"></div>
-<div class="Card"></div>
-<div class="Card"></div>
-<div class="Card"></div>
-<div class="Card"></div>
-<div class="Card"></div>
-<div class="Card"></div>
-<div class="Card"></div>
-        </div>
+        </section>
       </main>
     </header>
-</body>
+    <script src="/javascipts/compra.js"></script>
+  </body>
 </html>

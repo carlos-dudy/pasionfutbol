@@ -1,0 +1,45 @@
+:root {
+    --color_primario: #4d0b79a8;
+    --color_primario_suave:  #8527c3fd;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color_primario);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .detalles{
+    color:white;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnConfirmar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

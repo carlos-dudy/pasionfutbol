@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylos/datos.css" />
+    <title>Resumen de Compra</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>Gracias por su Compra</h1>
+            <a href="index.html" class="logo"> <img src="/img/logo.png" alt="logo" width="250px"/></a>
+            <a href="compras.html"><button>Volver</button></a>
+        </div>
+    </header>
+    <main>
+        <section class="detalles">
+            <div id="detalle"></div>
+        </section>
+
+    </main>
+  
+    <div class="form">
+        <form id="formulario" action="https://formspree.io/f/xqazrglw" method="POST">
+            <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+            <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+            <input type="email" id="contactoEmail" name="email" placeholder="Ingresa tu correo" required>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+            <br><br>
+            <div class="btnConfirmar">
+
+                <button type="submit" id="botonEnviar">Confirmar Compra</button>
+            </div>
+        </form>
+
+
+
+    </div>
+
+    
+
+    <hr>
+    <footer></footer>
+    <script src="/javascipts/datos.js"> </script>
+</body>
+</html>

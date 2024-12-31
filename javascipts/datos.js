@@ -1,7 +1,7 @@
 // Recuperar los datos del sessionStorage
 const productos = JSON.parse(localStorage.getItem('productos')) || [];
 const total = localStorage.getItem('total') || 0;
-
+console.log(productos)
 // Mostrar el resumen de la compra
 const resumen = document.getElementById("detalle");
 let resumenTexto = "Resumen de la compra:<br><br>";

@@ -21,7 +21,7 @@ function pagar() {
     localStorage.setItem('total', total);
 
     alert("Total a pagar: $ " + total);
-    window.location.href = "compra.html"; // Redirige a la página de compra.html
+    window.location.href = "datos.html"; // Redirige a la página de compra.html
 }
 
 function limpiarCarrito() {
